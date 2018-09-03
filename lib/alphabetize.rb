@@ -6,6 +6,7 @@ def alphabetize(arr)
   arr.sort_by do |item|
     letter_array = item.split("")
     letter_array.map do |letter|
-      letter
+      ESPERANTO_ALPHABET.index(letter)
+    end
   end
 end
